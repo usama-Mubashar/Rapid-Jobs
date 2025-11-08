@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jobs | RapidJobs</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">RapidJobs</h1>
+      <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="jobs.html">Jobs</a>
+    <a href="upload-resume.html">Upload Resume</a>
+    <a href="login.html" id="loginLink">Login</a>
+    <span id="userInfo" style="display: none;">
+      Welcome, <b id="userName"></b> |
+      <button id="logoutBtn" class="logout-btn">Logout</button>
+    </span>
+  </nav>
+
+    </div>
+  </header>
+
+  <!-- Job Listings -->
+<section class="jobs">
+  <div class="container">
+    <h2>Latest Job Listings</h2>
+    <div id="jobsContainer" class="job-list"></div>
+  </div>
+</section>
+
+
+
+
+  <footer>
+    <p>© 2025 RapidJobs | Designed for Project Task</p>
+  </footer>
+<script src="./js/jobs.js"></script>
+ 
+</body>
+</html>

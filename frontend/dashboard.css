@@ -1,0 +1,148 @@
+/* === Global Styles === */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: #f4f6fa;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* === Dashboard Section === */
+.dashboard {
+  padding: 60px 20px;
+}
+
+.dashboard-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.dashboard h2 {
+  text-align: center;
+  color: #0047b3;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+/* === Cards === */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px 20px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+.card h3 {
+  color: #0047b3;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.card p {
+  font-size: 24px;
+  font-weight: 700;
+  color: #222;
+}
+
+/* === Table === */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+th, td {
+  padding: 15px 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #0047b3;
+  color: #fff;
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background-color: #f7f9fc;
+}
+
+tr:hover {
+  background-color: #e6f0ff;
+}
+
+.section-title {
+  margin: 30px 0 15px 0;
+  color: #0047b3;
+  font-size: 1.4rem;
+}
+
+/* === Footer === */
+footer {
+  background-color: #0047b3;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+  font-size: 0.9rem;
+}
+
+/* === Messages === */
+.message-box {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 12px 18px;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 500;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  opacity: 0.95;
+}
+
+.message-success {
+  background-color: #28a745;
+}
+
+.message-error {
+  background-color: #dc3545;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar nav {
+    margin-top: 10px;
+  }
+}

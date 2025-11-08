@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | RapidJobs</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">RapidJobs</h1>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+    <a href="jobs.html">Jobs</a>
+    
+    
+    
+    <a href="upload-resume.html">Upload Resume</a>
+    <a href="login.html" id="loginLink">Login</a>
+    <span id="userInfo" style="display: none;">
+      Welcome, <b id="userName"></b> |
+      <button id="logoutBtn" class="logout-btn">Logout</button>
+    </span>
+        
+      </nav>
+    </div>
+  </header>
+
+  <!-- Login Form -->
+  <section class="form-section">
+    <div class="form-box">
+      <h2>Login to Your Account</h2>
+        <form id="loginForm">
+      <label>Email Address</label>
+      <input type="email" name="email" placeholder="Enter your email" required>
+
+      <label>Password</label>
+      <input type="password" name="password" placeholder="Enter your password" required>
+
+      <button type="submit">Login</button>
+
+      <p class="redirect">Don't have an account? <a href="register.html">Register here</a></p>
+      <div id="messageBox" class="message-box"></div>
+    </form>
+        </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 RapidJobs | Designed for Project Task</p>
+  </footer>
+
+</body>
+<script src="./js/auth.js"></script>
+
+</html>

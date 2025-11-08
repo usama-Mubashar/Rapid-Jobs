@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Candidate Applications | RapidJobs</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="stylesheet2.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">RapidJobs</h1>
+      <nav>
+        <a href="post-job.html">Post Job</a>
+        <a href="admin-candidates.html" class="active">Candidates</a>
+        <a href="admin-dashboard.html">Admin</a>
+        <button id="logoutBtn" class="logout-btn">Logout</button>
+        <p id="logoutMessage" class="logout-message"></p>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Candidate Section -->
+  <section class="form-section">
+    <div class="candidate-container">
+      <h2>All Candidates Who Applied</h2>
+      <div class="table-wrapper">
+        <table class="candidates-table" id="candidatesTable">
+          <thead>
+            <tr>
+              <th>Job Title</th>
+              <th>Candidate Name</th>
+              <th>Email</th>
+              <th>Resume</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="candidatesBody">
+            <!-- Dynamically filled -->
+          </tbody>
+        </table>
+        <div class="empty" id="noData" style="display:none;">No candidates have applied yet.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 RapidJobs | Designed for Project Task</p>
+  </footer>
+
+  <script src="./js/admin-candidate.js"></script>
+</body>
+</html>

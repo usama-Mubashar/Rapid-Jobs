@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | RapidJobs</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./dashboard.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">RapidJobs</h1>
+      
+      <nav>
+        
+       <a href="post-job.html">Post Job</a>
+       <a href="admin-candidates.html">Candidates Applied</a>
+        <a href="admin-dashboard.html" class="active">Admin</a>
+        
+      <button id="logoutBtn" class="logout-btn">Logout</button>
+      <!-- logout message container -->
+      <p id="logoutMessage" class="logout-message"></p>
+
+      </nav>
+      
+    </div>
+  </header>
+
+  <section class="dashboard">
+    <div class="dashboard-container">
+      <h2>Admin Dashboard </h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Total Users</h3>
+          <p>120</p>
+        </div>
+        <div class="card">
+          <h3>Total Jobs</h3>
+          <p>45</p>
+        </div>
+        <div class="card">
+          <h3>Uploaded Resumes</h3>
+          <p>80</p>
+        </div>
+      </div>
+
+      <h3 class="section-title">Recent Job Posts</h3>
+      <table id="jobsTable">
+        
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 RapidJobs | Designed for Project Task</p>
+  </footer>
+<script src="./js/admin-dashboard.js"></script>
+
+</body>
+</html>

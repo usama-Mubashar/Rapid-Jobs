@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post a Job | RapidJobs</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    /* 🔹 Optional: smooth fade for message boxes */
+    .message-box {
+      display: none;
+      text-align: center;
+      margin-top: 10px;
+      font-weight: 600;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    .message-box.show {
+      display: block;
+      opacity: 1;
+    }
+
+    .logout-message {
+      font-weight: 600;
+      margin-left: 10px;
+      color: green;
+      display: none;
+    }
+
+    .logout-message.show {
+      display: inline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">RapidJobs</h1>
+      <nav>
+        <a href="post-job.html" class="active">Post Job</a>
+        <a href="admin-candidates.html">Candidates Applied</a>
+        <a href="admin-dashboard.html">Admin</a>
+
+        <!-- Logout button and message -->
+        <button id="logoutBtn" class="logout-btn">Logout</button>
+        <span id="logoutMessage" class="logout-message"></span>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Post Job Form -->
+  <section class="form-section">
+    <div class="form-box">
+      <h2>Post a New Job</h2>
+
+      <!-- Message for access denied or job posting -->
+      <p id="accessMessage" class="message-box" style="color:red;"></p>
+      <p id="jobMessage" class="message-box"></p>
+
+      <form>
+        <label>Job Title</label>
+        <input type="text" placeholder="e.g. Frontend Developer" required>
+
+        <label>Company Name</label>
+        <input type="text" placeholder="e.g. BlueTech Solutions" required>
+
+        <label>Location</label>
+        <input type="text" placeholder="e.g. Lahore, Karachi, Remote" required>
+
+        <label>Job Type</label>
+        <select required>
+          <option value="">Select Type</option>
+          <option>Full-Time</option>
+          <option>Part-Time</option>
+          <option>Internship</option>
+          <option>Remote</option>
+        </select>
+
+        <label>Job Description</label>
+        <textarea rows="5" placeholder="Write job details here..." required></textarea>
+
+        <button type="submit">Post Job</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 RapidJobs | Designed for Project Task</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="./js/postJob.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+/* === Candidates Table === */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+}
+
+th, td {
+  padding: 14px 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #0047b3;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #f7f9fc;
+}
+
+tr:hover {
+  background-color: #e6f0ff;
+}
+
+/* Action Buttons */
+.action-btn {
+  padding: 6px 12px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.accept-btn {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.accept-btn:hover {
+  background-color: #218838;
+}
+
+.reject-btn {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.reject-btn:hover {
+  background-color: #c82333;
+}
+
+/* Status Labels */
+.status-pending {
+  color: #ff9800;
+  font-weight: 600;
+}
+
+.status-accepted {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.status-rejected {
+  color: #dc3545;
+  font-weight: 600;
+}

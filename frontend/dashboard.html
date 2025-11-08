@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard | RapidJobs</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./dashboard.css">
+  <link rel="stylesheet" href="./style3.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">RapidJobs</h1>
+      <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="jobs.html">Jobs</a>
+    <a href="dashboard.html">Dashboard</a>
+    <span id="userInfo" style="display: none;">
+      Welcome, <b id="userName"></b> |
+      <button id="logoutBtn" class="logout-btn">Logout</button>
+    </span>
+  </nav>
+
+    </div>
+  </header>
+
+  <!-- Dashboard Section -->
+  <section class="dashboard">
+    <div class="dashboard-container">
+      <h2>Welcome to Your Dashboard</h2>
+
+      <!-- Cards Section -->
+      <div class="cards">
+        <div class="card">
+          <h3>Jobs Applied</h3>
+          <p id="appliedCount">0</p>
+        </div>
+      </div>
+
+      <!-- Recent Applications -->
+      <h3 class="section-title">Recent Applications</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Job Title</th>
+            <th>Company</th>
+            <th>Status</th>
+            <th>Date Applied</th>
+          </tr>
+        </thead>
+        <tbody id="applicationsTable">
+          <!-- Rows will be dynamically added here -->
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 RapidJobs | Designed for Project Task</p>
+  </footer>
+
+  <script src="./js/dashboard.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RapidJobs - Find Your Dream Job</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">RapidJobs</h1>
+        <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="jobs.html">Jobs</a>
+    <a href="login.html" id="loginLink">Login</a>
+    <span id="userInfo" style="display: none;">
+      Welcome, <b id="userName"></b> |
+      <button id="logoutBtn" class="logout-btn">Logout</button>
+    </span>
+  </nav>
+
+
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Find your next opportunity</h2>
+      <p>Search thousands of jobs from top companies across Pakistan</p>
+      <div class="search-bar">
+  <input type="text" placeholder="Job title, company or keyword" id="jobSearchInput">
+  <select id="locationSelect">
+    <option value="">Select Location</option>
+    <option value="lahore">Lahore</option>
+    <option value="karachi">Karachi</option>
+    <option value="islamabad">Islamabad</option>
+    <option value="remote">Remote</option>
+  </select>
+  <button id="searchButton">Search</button>
+</div>
+
+    </div>
+  </section>
+
+  <!-- Job Listings -->
+<section class="jobs">
+  <div class="container">
+    <h2>Latest Job Listings</h2>
+
+    <!-- ✅ IMPORTANT: Add this -->
+    <div id="jobsContainer" class="job-list">
+      <p>Loading jobs...</p>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 RapidJobs | Designed for Project Task</p>
+  </footer>
+ <script src="./js/home.js"></script>
+
+</body>
+</html>

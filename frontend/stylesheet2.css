@@ -1,0 +1,131 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f6fb;
+  color: #333;
+}
+
+.candidate-container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 50px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 40px;
+}
+
+.candidate-container h2 {
+  color: #0047b3;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+/* Table Styling */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.candidates-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.candidates-table th {
+  background-color: #0047b3;
+  color: white;
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.candidates-table td {
+  padding: 14px 18px;
+  background-color: #fdfdfd;
+  border-bottom: 1px solid #e2e6f0;
+}
+
+.candidates-table tr:hover td {
+  background-color: #f0f6ff;
+  transition: 0.3s;
+}
+
+/* Resume Link */
+.download-link {
+  color: #0047b3;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.download-link:hover {
+  text-decoration: underline;
+}
+
+/* Status Badges */
+.status-badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  display: inline-block;
+  text-align: center;
+}
+
+.status-pending {
+  background-color: #ffb300;
+  color: white;
+}
+.status-accepted {
+  background-color: #28a745;
+  color: white;
+}
+.status-rejected {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Buttons */
+.action-btn {
+  padding: 6px 14px;
+  margin: 0 4px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.accept-btn {
+  background-color: #28a745;
+  color: #fff;
+}
+.accept-btn:hover {
+  background-color: #218838;
+}
+
+.reject-btn {
+  background-color: #dc3545;
+  color: #fff;
+}
+.reject-btn:hover {
+  background-color: #c82333;
+}
+
+/* Empty Message */
+.empty {
+  margin-top: 20px;
+  color: #666;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .candidates-table th,
+  .candidates-table td {
+    font-size: 13px;
+    padding: 10px;
+  }
+}
